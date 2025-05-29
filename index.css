@@ -1,4 +1,4 @@
-/* Reset y base */
+
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +12,7 @@ body {
     overflow-x: hidden;
 }
 
-/* Animaciones */
+
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
@@ -103,7 +103,7 @@ body {
     50% { transform: translateY(-10px); }
 }
 
-/* Clases de animación */
+
 .fade-in {
     animation: fadeIn 0.8s ease-out;
 }
@@ -156,7 +156,7 @@ body {
     animation: slideInBottom 0.8s ease-out 0.6s both;
 }
 
-/* Header */
+
 .header {
     background: linear-gradient(135deg, #1e88e5, #1565c0);
     color: white;
@@ -193,7 +193,7 @@ body {
     z-index: 1;
 }
 
-/* Breadcrumb */
+
 .breadcrumb {
     background: #1565c0;
     color: white;
@@ -213,14 +213,14 @@ body {
     transform: translateX(5px);
 }
 
-/* Container */
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 40px 20px;
 }
 
-/* Scenario Grid */
+
 .scenario-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -286,7 +286,7 @@ body {
     transform: translateY(-2px);
 }
 
-/* Instruction */
+
 .instruction {
     text-align: center;
     font-size: 1.2rem;
@@ -295,7 +295,7 @@ body {
     margin-top: 40px;
 }
 
-/* Game Content */
+
 .game-content {
     background: rgba(255, 255, 255, 0.98);
     backdrop-filter: blur(20px);
@@ -326,7 +326,7 @@ body {
     position: relative;
 }
 
-/* Brief Content */
+
 .brief-content {
     background: linear-gradient(135deg, #f8f9fa, #e9ecef);
     padding: 30px;
@@ -366,7 +366,6 @@ body {
     background-clip: text;
 }
 
-/* Buttons */
 .start-btn {
     background: linear-gradient(135deg, #ff9800, #f57c00);
     color: white;
@@ -422,7 +421,7 @@ body {
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
-/* Quiz Container */
+
 .quiz-container {
     margin-top: 30px;
 }
@@ -501,7 +500,7 @@ body {
     border-radius: 2px;
 }
 
-/* Score Display */
+
 .score-display {
     background: linear-gradient(135deg, #4caf50, #2e7d32);
     color: white;
@@ -525,7 +524,7 @@ body {
     animation: cardFloat 3s ease-in-out infinite;
 }
 
-/* Feedback */
+
 .feedback {
     background: linear-gradient(135deg, #e8f5e8, #f1f8e9);
     border-left: 4px solid #4caf50;
@@ -547,12 +546,12 @@ body {
     animation: shake 0.5s ease-out;
 }
 
-/* Hidden */
+
 .hidden {
     display: none;
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
     .header h1 {
         font-size: 2rem;
@@ -579,7 +578,7 @@ body {
     }
 }
 
-/* Efectos adicionales para interactividad */
+
 .option.selected {
     border-color: #4caf50;
     background: rgba(232, 245, 232, 0.9);
@@ -592,7 +591,6 @@ body {
     animation: shake 0.5s ease-out;
 }
 
-/* Efectos de partículas para celebración */
 @keyframes confetti {
     0% { transform: translateY(0) rotate(0deg); opacity: 1; }
     100% { transform: translateY(-100vh) rotate(360deg); opacity: 0; }
