@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt Engineering Challenge</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="home-screen" class="fade-in">
+        <div class="header">
+            <h1 class="slide-down">Escenario de Práctica • Prompt Engineering</h1>
+            <p class="slide-up">Aplica las Técnicas de Prompt Engineering en Situaciones Reales</p>
+        </div>
+        
+        <div class="container">
+            <div class="scenario-grid">
+                <div class="scenario-card animate-card-1" onclick="selectScenario('redaccion')">
+                    <div class="scenario-icon pulse">✉️</div>
+                    <div class="scenario-title">REDACCIÓN EFECTIVA</div>
+                </div>
+                
+                <div class="scenario-card animate-card-2" onclick="selectScenario('analisis')">
+                    <div class="scenario-icon pulse">📊</div>
+                    <div class="scenario-title">ANÁLISIS DE DATOS</div>
+                </div>
+                
+                <div class="scenario-card animate-card-3" onclick="selectScenario('creatividad')">
+                    <div class="scenario-icon pulse">💡</div>
+                    <div class="scenario-title">CREATIVIDAD E IDEAS</div>
+                </div>
+            </div>
+            
+            <div class="instruction fade-in-delay">
+                Selecciona un escenario. Analiza las opciones y elige el mejor prompt!
+            </div>
+        </div>
+    </div>
+
+    <div id="brief-screen" class="hidden">
+        <div class="header">
+            <h1 id="brief-scenario-title" class="slide-down">Escenario de Práctica</h1>
+        </div>
+        
+        <div class="breadcrumb slide-in-left">
+            <a href="#" onclick="goHome()">Inicio</a> > <span id="breadcrumb-scenario">Escenario</span>
+        </div>
+        
+        <div class="container">
+            <div class="game-content slide-in-bottom">
+                <h2 class="game-title bounce-in">Brief: <span id="brief-title"></span></h2>
+                
+                <div class="brief-content fade-in-slow" id="brief-content">
+
+                </div>
+                
+                <button class="start-btn glow-pulse" onclick="startQuiz()">Comenzar</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="quiz-screen" class="hidden">
+        <div class="header">
+            <h1 id="quiz-scenario-title" class="slide-down">Escenario de Práctica</h1>
+        </div>
+        
+        <div class="breadcrumb slide-in-left">
+            <a href="#" onclick="goHome()">Inicio</a> > <span id="breadcrumb-quiz">Escenario</span>
+        </div>
+        
+        <div class="container">
+            <div class="game-content slide-in-bottom">
+                <button class="back-btn hover-lift" onclick="goToBrief()">← Volver al Brief</button>
+                
+                <h2 class="game-title bounce-in">Selecciona el mejor prompt</h2>
+                
+                <div id="score-container"></div>
+                
+                <div class="quiz-container">
+                    <div class="question-text fade-in" id="question-text"></div>
+                    
+                    <div id="options-container">
+                        
+                    </div>
+                    
+                    <div id="feedback-container"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
