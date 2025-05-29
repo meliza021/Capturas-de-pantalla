@@ -373,6 +373,7 @@ function goHome() {
     score = 0;
     totalQuestions = 0;
     answered = false;
+    answered = true
     
     addAnimationClass(document.getElementById('home-screen'), 'fade-in');
 }
