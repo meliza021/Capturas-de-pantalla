@@ -1,4 +1,4 @@
-
+/* Reset y base */
 * {
     margin: 0;
     padding: 0;
@@ -242,26 +242,12 @@ body {
     overflow: hidden;
 }
 
-.scenario-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(30,136,229,0.1), transparent);
-    transition: left 0.6s ease;
-}
 
-.scenario-card:hover::before {
-    left: 100%;
-}
 
 .scenario-card:hover {
     transform: translateY(-10px) scale(1.02);
     box-shadow: 0 25px 50px rgba(30,136,229,0.3);
     border-color: #1e88e5;
-    animation: cardFloat 2s ease-in-out infinite;
 }
 
 .scenario-icon {
@@ -456,20 +442,7 @@ body {
     backdrop-filter: blur(10px);
 }
 
-.option::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(30,136,229,0.1), transparent);
-    transition: left 0.6s ease;
-}
 
-.option:hover::before {
-    left: 100%;
-}
 
 .option:hover {
     border-color: #1e88e5;
@@ -574,12 +547,12 @@ body {
     animation: shake 0.5s ease-out;
 }
 
-
+/* Hidden */
 .hidden {
     display: none;
 }
 
-
+/* Responsive */
 @media (max-width: 768px) {
     .header h1 {
         font-size: 2rem;
